@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Product_page.Product_page">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/productPage_back_btn"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ProductImagePager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/productPage_back_btn"
+        />
+
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/white"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        android:layout_below="@id/ProductImagePager"
+        android:layout_centerHorizontal="true"
+        app:selectedDotColor="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:progressMode="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/ProductImagePager"
+        android:text="Product Name"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:id="@+id/ProductName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/ProductName"
+        android:text="Our wide range of water purifiers meets the modern days kitchen and is a perfect companion for the discerning lady.The Alkaline water purifier helps in protecting
+your entire family by providing healthy and safe drinking water enriched with natural minerals.
+ "
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/ProductDescription"
+        />
+
+    <TextView
+        android:id="@+id/product_page_desprication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/ProductDescription"
+        android:text="₹3500"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/product_add_to_cart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_page_desprication"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_31sdp"
+        android:background="@drawable/custom_edit_shape"
+        android:backgroundTint="#B18CFF"
+        android:fontFamily="@font/ibarra_real_nova"
+        android:text="Add to Cart"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:textSize="@dimen/_18sdp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/product_buy_now_to_cart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_add_to_cart_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:background="@drawable/custom_edit_shape"
+        android:backgroundTint="#C7591E87"
+        android:fontFamily="@font/ibarra_real_nova"
+        android:text="Buyt Now"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:textSize="@dimen/_18sdp"
+        />
+
+
+</RelativeLayout>

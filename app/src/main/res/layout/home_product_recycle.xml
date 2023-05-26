@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_160sdp">
+
+    <ImageView
+        android:id="@+id/home_image_view"
+        android:layout_width="@dimen/_159sdp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:src="@color/black"/>
+
+    <TextView
+        android:id="@+id/name_of_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/home_image_view"
+        android:fontFamily="@font/roboto"
+        android:text="Domestic"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <TextView
+        android:id="@+id/amount_of_product"
+        android:layout_below="@+id/name_of_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/home_image_view"
+        android:fontFamily="@font/roboto"
+        android:text="₹32347"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/detials_of_product"
+        android:layout_below="@+id/amount_of_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/home_image_view"
+        android:fontFamily="@font/roboto"
+        android:text="Our wide range of water purifiers
+ meets the modern days kitchen
+and is a perfect companion for
+ the discerning lady."
+        android:textColor="#80000000"
+        android:textSize="@dimen/_13sdp" />
+</RelativeLayout>
